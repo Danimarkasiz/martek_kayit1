@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign Up / Sign In</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -21,92 +21,27 @@
 
     <div class="container">
         
-        <div class="row mt-5">
+        <div class="forms">
 
-            <div class="col-lg-4 m-auto">
-               
-                <!--Form Basligi-->
-                <h2 class="text-center pt-3" style="color: white;">Sing Up</h2>
+            <div class="form login">
+                
+                <span class="title" style="margin: auto; color: aqua; margin-bottom: 3px; margin-top: 5px;">Giriş</span>
 
-                <!--Form-->
-                <Form action="#">
-                    
-                    <div class="input-group mb-3">
+                <form action="" style="margin: auto; margin-bottom: 5px;">
 
-                        <input type="text" class="form-control" placeholder="First Name"/>
+                    <div class="input-field">
 
-                    </div>
-                    
-                    <div class="input-group mb-3">
-
-                        <input type="text" class="form-control" placeholder="Surame"/>
+                        <input type="email" placeholder="E-Posta adresinizi giriniz" style="margin-bottom: 5px;"></br>
+                        <input type="password" placeholder="Şifrenizi giriniz">
 
                     </div>
 
-                    
-                    <div class="input-group mb-3">
+                </form>
 
-                        <input type="tel" class="form-control" placeholder="Phone Number 1"/>
+                <span class="title" style="margin: auto; color: aqua;">Kayıt Ol</span>
 
-                    </div>
+                
 
-                    
-                    <div class="input-group mb-3">
-
-                        <input type="tel" class="form-control" placeholder="Phone Number 2"/>
-
-                    </div>
-
-                    <div class="input-group mb-3">
-
-                        <input type="email" class="form-control" placeholder="E-mail"/>
-
-                    </div>
-
-                    <div class="input-group mb-3">
-
-                        <input type="password" name="password1" id="pw1" class="form-control" placeholder="Password">
-
-                    </div>
-
-                    <div class="input-group mb-3">
-
-                        <input type="password" name="password2" id="pw2" class="form-control" placeholder="Verify Password">
-
-                    </div>
-                    
-                    <div class="input-group mb-3">
-                        
-                        <div class="input-group">
-                            
-                            <label style="color: white;"><ins>Gender</ins></label>
-                            
-                        </div>
-                        
-                        <div class="input">
-                        
-                            <label style="color: white;">Male</label>
-                            <input type="radio" name="gender" id="g1">
-                        
-                            <label style="color: white;">Female</label>
-                            <input type="radio" name="gender" id="g2">
-
-                            <Label style="color: white;">Other</Label>
-                            <input type="radio" name="gender" id="g3">
-                            
-                        </div>
-
-                    </div>
-                    
-                    <div class="input-group mb-3">
-
-                        <input type="button" value="submit" style="margin: auto; display: block; width: 100%; color: white; background: green;">
-
-                    </div>
-
-                    
-
-                </Form>
 
             </div>
 
@@ -114,9 +49,6 @@
 
     </div>
 
-    <div class="container signin">
-        <p style="color: white; text-align: center;">Already have an account? <a href="singin.html" style="color: aqua;">Sign in</a>.</p>
-    </div>
     
 </body>
 </html>
