@@ -15,39 +15,42 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/register.css">
 
+    <!--Jquery-->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
 
 </head>
 <body class=>
 
     <div class="container">
         
-        <div class="forms">
-
-            <div class="form login">
-                
-                <span class="title" style="margin: auto; color: aqua; margin-bottom: 3px; margin-top: 5px;">Giriş</span>
-
-                <form action="" style="margin: auto; margin-bottom: 5px;">
-
-                    <div class="input-field">
-
-                        <input type="email" placeholder="E-Posta adresinizi giriniz" style="margin-bottom: 5px;"></br>
-                        <input type="password" placeholder="Şifrenizi giriniz">
-
-                    </div>
-
-                </form>
-
-                <span class="title" style="margin: auto; color: aqua;">Kayıt Ol</span>
-
-                
-
-
+        <div class="loginMenu">
+            <div class="form">
+              <form class="registerForm">
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <input type="mail" placeholder="email adress"/>
+                <button>Gooooo!</button>
+                <p class="message" style="color: white;">Do you have an account? <a href="#" style="color: aqua;">Sign In</a></p>
+              </form>
+              <form class="loginForm">
+                <input type="text" placeholder="username"/>
+                <input type="password" placeholder="password"/>
+                <button>GOOOO!</button>
+                <p class="message" style="color: white;">Don't you have an account? <a href="#" style="color: aqua;">Create an account</a></p>
+              </form>
             </div>
-
         </div>
 
     </div>
+
+    <script>
+        $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+        });
+    </script>
 
     
 </body>
